@@ -57,9 +57,8 @@
           <li><a class="smoothscroll" href="#about">About</a></li>
 	  <li><a class="smoothscroll" href="#resume">Resume</a></li>
           <li><a class="smoothscroll" href="#portfolio">
-	      Works</a></li>
-          <li><a class="smoothscroll" href="#testimonials">
-	      Testimonials</a></li>
+	      Portfolio</a></li>
+	  <li><a class="smoothscroll" href="#works">Works</a></li>
           <li><a class="smoothscroll" href="#contact">
 	      Contact</a></li>
         </ul> <!-- end #nav -->
@@ -69,15 +68,90 @@
       <div class="row banner">
         <div class="banner-text">
           <h1 class="responsive-headline">I'm Yuichiro TADA.</h1>
-          <h3>I'm a theoretical cosmologist working on <br>
-	    <span>inflation</span>,
-	    <span>primordial black hole</span>,
-	    <span>gravitational wave</span>, etc. <br>
-	    in Nagoya university, Japan. <br>
-	    Let's <a class="smoothscroll" href="#about">
-	      start scrolling</a>
-            and learn more
-	    <a class="smoothscroll" href="#about">about me</a>.</h3>
+	  <!--
+	  <div class="row">
+	    <div class="three columns">
+	    </div>
+	    <div class="nine columns">
+              <h3>I'm a theoretical cosmologist working on <br>
+		<span>inflation</span>,
+		<span>primordial black hole</span>,
+		<span>gravitational wave</span>, etc. <br>
+		in Nagoya university, Japan. <br>
+		Let's <a class="smoothscroll" href="#about">
+		  start scrolling</a>
+		and learn more
+		<a class="smoothscroll" href="#about">about me</a>.
+	      </h3>
+	    </div>
+	  </div>
+	  -->
+	  <hr />
+	  <div class="row">
+	    <div class="three columns date">
+	      20. 08. 2020&nbsp;&nbsp;
+	    </div>
+	    <div class="nine columns content">
+	      <p>
+		The 14th International Conference on Gravitation, Astrophysics and Cosmology (ICGAC14) <br>
+		<span onclick="obj=document.getElementById('17082020').style;
+			       obj.display=(obj.display=='none')?'block':'none';">
+		  <a style ="cursor:pointer;">
+		    Manifestly covariant theory of stochastic inflation ▼
+		  </a>
+		</span>
+		<span id="17082020"
+		      style="display:none;clear:both;margin-left:0.5em">
+		    <br>
+		    The stochastic approach to inflation can non-perturbatively treat the superhorizon fluctuations as the classical random noise to go beyond the standard perturbative QFT approach. I first review how this approach enables us to calculate the observable curvature perturbations in a non-perturbative way and how it can be implemented in a numerical program. I then describe the covariance of the stochastic theory and the discretization scheme of the stochastic noise, which are important both theoretically and practically. Mathematically the stochastic noise can be discretized in an arbitrary manner, but we reveal the physically motivated discretization, which ensures the covariance of the stochastic theory on the inflatons' target manifold.
+		</span><br>
+		L. Pinol, S. Renaux-Petel, Y. Tada, V. Vennin <br>
+		oral @ National Central University, Taiwan (Web Conference)
+	      </p>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div class="three columns date">
+	      15. 09. 2020&nbsp;&nbsp;
+	    </div>
+	    <div class="nine columns content">
+	      <p>
+		日本物理学会秋季大会 <br>
+		<span onclick="obj=document.getElementById('15092020').style;
+			       obj.display=(obj.display=='none')?'block':'none';">
+		    <a style="cursor:pointer;">
+		      Escape from the swamp with spectator ▼
+		    </a>
+		</span>
+		<span id="15092020"
+		      style="display:none;clear:both;margin-left:0.5em">
+		  <br>
+		  近年弦理論の文脈で、ある種の低エネルギー有効理論がUV完全でない可能性を指摘する沼地予想が注目され、UV完全な有効理論が満たすべき様々な仮説的条件が提唱されている。これらはインフレーション機構にも制限を与え、典型的には長く続く加速膨張期を禁じる傾向がある。そこで我々は短いインフレーションが多数繰り返され合わせて必要な膨張量を達成する模型に着目し、これらが実際沼地仮説の条件を満たすことを示した。またこの模型のもと、大スケールでほぼスケール不変な初期ゆらぎをスペクテイター場によって実現し得ることも議論する。
+		</span><br>
+		小粥一寛, 多田祐一郎 <br>
+		口頭 @ 筑波大学 (オンライン)
+	      </p>
+	    </div>
+	  </div>
+	  
+	  <div class="row">
+	    <div class="three columns news">
+	      <icon><i class="fas fa-newspaper"></i></icon>
+	    </div>
+	    <div class="nine columns content">
+	      <p>
+		<a href="https://inspirehep.net/literature/1809872" target="_blank">
+		  Conformal inflation in the metric-affine geometry
+		</a><br>
+		Yusuke Mikura, Yuichiro Tada and Shuichiro Yokoyama <br>
+		<a href="https://arxiv.org/abs/2008.00628" target="_blank">
+		  arXiv:2008.00628 [hep-th]
+		</a>
+	      </p>
+	    </div>
+	  </div>
+		
           <hr />
           <ul class="social">
             <li><a href="https://www.facebook.com/yuichiro.tada.90"
@@ -129,12 +203,25 @@
 	  
           <h2>About Me</h2>
 	  
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+          <p>
+	    I'm a theoretical scientist in Nagoya university, Japan.
+	    My main interest is physics of the early stage of
+	    our universe.
+	    In particular, I have so far focused on <span>inflation</span>,
+	    the accelerated expansion preceding
+	    the hot Big-Bang universe.
+	    I have proposed a novel analysing approach to inflation
+	    with use of mathematics of random noise called
+	    stochastic calculus.
+	    <span>Primordial black hole</span> is also my research topic as
+	    a direct consequence of particular dynamics of
+	    the early universe.
+	    I'm also working on several production mechanism of
+	    <span>gravitational waves</span>.
+	    I'm from Saitama, Japan.
+	    I completed a B.Sc. in Physics in 2012 and a M.Sc.
+	    in Physics in 2014, and received a Ph.D. in Physics
+	    from the University of Tokyo in March 2017.
           </p>
 	  
           <div class="row">
@@ -143,19 +230,21 @@
 	      
               <h2>Contact Details</h2>
               <p class="address">
-		<span>Jonathan Doe</span><br>
-		<span>1600 Amphitheatre Parkway<br>
-		  Mountain View, CA 94043 US
-                </span><br>
-		<span>(123)456-7890</span><br>
-                <span>anyone@website.com</span>
+		Yuichiro Tada<br>
+		ES bldg. 6F, Nagoya university <br>
+		Furocho Chikusaku Nagoya, Aichi 464-8602 Japan
+                <br>
+		+81 (0)80-9566-9181<br>
+                tada.yuichiro@e.mbox.nagoya-u.ac.jp
 	      </p>
 	      
             </div>
 	    
             <div class="columns download">
               <p>
-                <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                <a href="pdfs/CV_YT_0727.pdf" class="button"
+		   target="_blank">
+		  <i class="fa fa-download"></i>Download Resume</a>
               </p>
             </div>
 	    
@@ -167,710 +256,1011 @@
       
     </section> <!-- About Section End-->
     
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
+    
+    <!-- Resume Section
+	 ================================================== -->
+    <section id="resume">
+      
       <!-- Education
-      ----------------------------------------------- -->
+	----------------------------------------------- -->
       <div class="row education">
+	
+        <div class="three columns header-col">
+          <h1><span>Education</span></h1>
+        </div>
+	
+        <div class="nine columns main-col">
+	  
+          <div class="row item">
+	    
+            <div class="twelve columns">
+	      
+              <h3>The University of Tokyo</h3>
+              <p class="info">Ph.D. in Physics<span>&bull;</span>
+		<em class="date">23rd March 2017</em></p>
+	      
+              <p>
+		Department of Physics, Adviser:
+		Dr. Masahiro Kawasaki & Dr. Hitoshi Murayama
+              </p>
+	      
+            </div>
+	    
+          </div> <!-- item end -->
+	  
+          <div class="row item">
+	    
+            <div class="twelve columns">
+	      
+              <h3>The University of Tokyo</h3>
+              <p class="info">M.Sc. in Physics<span>&bull;</span>
+		<em class="date">24th March 2014</em></p>
+	      
+              <p>
+		Department of Physics, Adviser:
+		Dr. Masahiro Kawasaki & Dr. Hitoshi Murayama
+              </p>
+	      
+            </div>
+	    
+          </div> <!-- item end -->
 
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
+	  <div class="row item">
+	    <div class="twelve columns">
+	      <h3>The University of Tokyo</h3>
+	      <p class="info">B.Sc. in Physics<span>&bull;</span>
+		<em class="date">23rd March 2012</em></p>
+	      <p>
+		Department of Phyiscs
+	      </p>
+	    </div>
+	  </div>
 
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Life</h3>
-                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
+	  <div class="row item">
+	    <div class="twelve columns">
+	      <h3>Kaichi high school</h3>
+	      <p class="info"><span>&bull;</span>
+		<em class="date">March 2008</em></p>
+	    </div>
+	  </div>
+	  
+        </div> <!-- main-col end -->
+	
       </div> <!-- End Education -->
+      
+      
+      <!-- Career
+	----------------------------------------------- -->
+      <div class="row career">
+	
+        <div class="three columns header-col">
+          <h1><span>Career</span></h1>
+        </div>
+	
+        <div class="nine columns main-col">
+	  
+          <div class="row item">
 
+            <div class="twelve columns">
+	      
+              <h3>Daido University</h3>
+              <p class="info">Lecturer (part-time) in
+		classical mechanics 1, 2<span>&bull;</span>
+		<em class="date">April 2019&ndash;Present</em></p>
+	      
+            </div>
+	    
+          </div> <!-- item end -->
+	  
+          <div class="row item">
+	    
+            <div class="twelve columns">
+	      
+              <h3>Nagoya University</h3>
+              <p class="info">JSPS Fellow (PD)<span>&bull;</span>
+		<em class="date">April 2018&ndash;Present</em></p>
+	      
+              <p>
+		C-lab., Department of Physics
+              </p>
+	      
+            </div>
+	    
+          </div> <!-- item end -->
 
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
+	  <div class="row item">
+	    <div class="twelve columns">
+	      <h3>Institute d'Astrophysique de Paris</h3>
+	      <p class="info">PD researcher<span>&bull;</span>
+		<em class="date">April 2017&ndash;March 2018</em></p>
+	      <p>
+		S&eacute;bastien Renaux-Petel Group
+	      </p>
+	    </div>
+	  </div>
 
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
+	  <div class="row item">
+	    <div class="twelve columns">
+	      <h3>The University of Tokyo</h3>
+	      <p class="info">JSPS Fellow (DC2)<span>&bull;</span>
+		<em class="date">April 2015&ndash;March 2017</em></p>
+	      <p>
+		ICRR & Kavli IPMU
+	      </p>
+	    </div>
+	  </div>
 
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
+	  <div class="row item">
+	    <div class="twelve columns">
+	      <h3>The University of Tokyo</h3>
+	      <p class="info">ALPS Fellow<span>&bull;</span>
+		<em class="date">October 2012&ndash;March 2017</em>
+	      </p>
+	      <p>
+		ICRR & Kavli IPMU
+	      </p>
+	    </div>
+	  </div>
+	  
+        </div> <!-- main-col end -->
+	
+      </div> <!-- End Career -->
+      
+    </section> <!-- Resume Section End-->
+    
+    
+    <!-- Portfolio Section
+	 ================================================== -->
+    <section id="portfolio">
+      
       <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+	
+        <div class="twelve columns collapsed">
+	  
+          <h1>Check Out Some of My Works.</h1>
+	  
+          <!-- portfolio-wrapper -->
+          <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-01" title="">
+                  <img alt="" src="images/portfolio/coffee.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Coffee</h5>
+                      <p>Illustrration</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-02" title="">
+                  <img alt="" src="images/portfolio/console.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Console</h5>
+                      <p>Web Development</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-03" title="">
+                  <img alt="" src="images/portfolio/judah.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Judah</h5>
+                      <p>Webdesign</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                <a href="#modal-04" title="">
+                  <img alt="" src="images/portfolio/into-the-light.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Into The Light</h5>
+                      <p>Photography</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/farmerboy.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-05" title="">
+                  <img alt="" src="images/portfolio/farmerboy.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Farmer Boy</h5>
+                      <p>Branding</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-06" title="">
                         <img alt="" src="images/portfolio/girl.jpg">
                         <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
+                          <div class="portfolio-item-meta">
+          		    <h5>Girl</h5>
+                            <p>Photography</p>
+          		  </div>
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-07" title="">
+                  <img alt="" src="images/portfolio/origami.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Origami</h5>
+                      <p>Illustrration</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/origami.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
+              </div>
+            </div> <!-- item end -->
+	    
+            <div class="columns portfolio-item">
+              <div class="item-wrap">
+		
+                <a href="#modal-08" title="">
+                  <img alt="" src="images/portfolio/retrocam.jpg">
+                  <div class="overlay">
+                    <div class="portfolio-item-meta">
+          	      <h5>Retrocam</h5>
+                      <p>Web Development</p>
+          	    </div>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <div class="link-icon"><i class="icon-plus"></i></div>
+                </a>
+		
                   </div>
-          		</div>  <!-- item end -->
+            </div>  <!-- item end -->
+	    
+          </div> <!-- portfolio-wrapper end -->
+	  
+        </div> <!-- twelve columns end -->
+	
+	
+        <!-- Modal Popup
+	  --------------------------------------------------------------- -->
+	
+        <div id="modal-01" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Coffee Cup</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-01 End -->
+	
+        <div id="modal-02" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Console</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-02 End -->
+	
+        <div id="modal-03" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Judah</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
 
-            </div> <!-- portfolio-wrapper end -->
+	</div><!-- modal-03 End -->
+	
+        <div id="modal-04" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Into the Light</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-04 End -->
+	
+        <div id="modal-05" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Farmer Boy</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+	  </div>
 
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
+          <div class="link-box">
                <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
-
-            <div class="link-box">
+	       <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-05 End -->
+	
+        <div id="modal-06" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Girl</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+	  </div>
+	  
+          <div class="link-box">
                <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
+	       <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-06 End -->
+	
+        <div id="modal-07" class="popup-modal mfp-hide">
+	  
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Origami</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-07 End -->
+	
+        <div id="modal-08" class="popup-modal mfp-hide">
 
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-
+	  <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+	  
+	  <div class="description-box">
+	    <h4>Retrocam</h4>
+	    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+	  </div>
+	  
+          <div class="link-box">
+            <a href="http://www.behance.net">Details</a>
+	    <a class="popup-modal-dismiss">Close</a>
+          </div>
+	  
+	</div><!-- modal-01 End -->
+	
+	
       </div> <!-- row End -->
+      
+    </section> <!-- Portfolio Section End-->
 
-   </section> <!-- Portfolio Section End-->
+    
+    <!-- Works Section
+	 ================================================== -->
 
+    <section id="works">
 
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
+      <div class="row papers">
+	<div class="row">
+	  
+	  <div class="three columns header-col">
+	    <h1><span>Papers</span></h1>
+	    <p class="download">
+	      <a href="pdfs/publication_YT_1121.pdf" class="button"
+		 target="_blank">
+		<i class="fa fa-download"></i>Download Publication List
+	      </a>
+	    </p>
+	  </div>
+	  
+	  <div class="nine columns main-col">
+	    
+	    <h3>2020</h3>
+	    
+	    <p>
+	      <span>
+		[18] Conformal inflation in the metric-affine geometry
+	      </span><br>
+	      Y. Mikura, Y. Tada and S. Yokoyama <br>
+	      arXiv:
+	      <a href="https://arxiv.org/abs/2008.00628"
+		 target="_blank">
+		2008.00628
+	      </a>
+	      [hep-th].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[17] Escape from the swamp with spectator
+	      </span><br>
+	      K. Kogai and Y. Tada <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.101.103514"
+		 target="_blank">
+		Phys. Rev. D <b>101</b> (2020) no.10, 103514
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/2003.06753"
+		 target="_blank">
+		2003.06753
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2019</h3>
+	    
+	    <p>
+	      <span>
+		[16] Stochastic inflation with an extremely
+		large number of $e$-folds
+	      </span><br>
+	      N. Kitajima, Y. Tada and F. Takahashi <br>
+	      <a href="https://doi.org/10.1016/j.physletb.2019.135097"
+		 target="_blank">
+		Phys. Lett. B <b>800</b>, 135097 (2020)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1908.08694"
+		 target="_blank">
+		1908.08694
+	      </a>
+	      [hep-ph]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[15] Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes
+	      </span><br>
+	      Y. Tada and S. Yokoyama <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.100.023537"
+		 target="_blank">
+		Phys. Rev. D <b>100</b>, no. 2, 023537 (2019)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1904.10298"
+		 target="_blank">
+		1904.10298
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2018</h3>
+	    
+	    <p>
+	      <span>
+		[14] Inflationary stochastic anomalies
+	      </span><br>
+	      L. Pinol, S. Renaux-Petel and Y. Tada <br>
+	      <a href="https://doi.org/10.1088/1361-6382/ab097f"
+		 target="_blank">
+		Class. Quant. Grav. <b>36</b>, no. 7, 07LT01 (2019)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1806.10126"
+		 target="_blank">
+		1806.10126
+	      </a>
+	      [gr-qc]].
+	    </p>
+	    
+	    <h3>2017</h3>
+	    
+	    <p>
+	      <span>
+		[13] $\mathcal O(10) M_\odot$ primordial black holes and string axion dark matter
+	      </span><br>
+	      K. Inomata, M. Kawasaki, K. Mukaida, Y. Tada and T. T. Yanagida <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.96.123527"
+		 target="_blank">
+		Phys. Rev. D <b>96</b>, no. 12, 123527 (2017)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1709.07865"
+		 target="_blank">
+		1709.07865
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[12] Does the detection of primordial gravitational 
+		waves exclude low energy inflation?
+	      </span><br>
+	      T. Fujita, R. Namba and Y. Tada <br>
+	      <a href="https://doi.org/10.1016/j.physletb.2017.12.014"
+		 target="_blank">
+		Phys. Lett. B <b>778</b>, 17 (2018)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1705.01533"
+		 target="_blank">
+	      1705.01533
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[11] Inflationary Primordial Black Holes as All Dark Matter
+	      </span><br>
+	      K. Inomata, M. Kawasaki, K. Mukaida, Y. Tada and T. T. Yanagida <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.96.043504"
+		 target="_blank">
+		Phys. Rev. D <b>96</b>, no. 4, 043504 (2017)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1701.02544"
+		 target="_blank">
+		1701.02544
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2016</h3>
+	    
+	    <p>
+	      <span>
+		[10] Inflationary primordial black holes for the LIGO gravitational wave events 
+		and pulsar timing array experiments
+	      </span><br>
+	      K. Inomata, M. Kawasaki, K. Mukaida, Y. Tada and T. T. Yanagida <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.95.123510"
+		 target="_blank">
+		Phys. Rev. D <b>95</b>, no. 12, 123510 (2017)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1611.06130"
+		 target="_blank">
+		1611.06130
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[9] Squeezed Bispectrum in the $\delta N$ Formalism: Local Observer Effect in Field Space
+	      </span><br>
+	      Y. Tada and V. Vennin <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2017/02/021"
+		 target="_blank">
+		JCAP <b>1702</b>, no. 02, 021 (2017)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1609.08876"
+		 target="_blank">
+		1609.08876
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[8] Primordial black holes as dark matter in supergravity inflation models
+	      </span><br>
+	      M. Kawasaki, A. Kusenko, Y. Tada and T. T. Yanagida <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.94.083523"
+		 target="_blank">
+		Phys. Rev. D <b>94</b>, no. 8, 083523 (2016)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1606.07631"
+		 target="_blank">
+		1606.07631
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[7] Revisiting constraints on small scale perturbations 
+		from big-bang nucleosynthesis
+	      </span><br>
+	      K. Inomata, M. Kawasaki and Y. Tada <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.94.043527"
+		 target="_blank">
+		Phys. Rev. D <b>94</b>, no. 4, 043527 (2016)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1605.04646"
+		 target="_blank">
+		1605.04646
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2015</h3>
+	    
+	    <p>
+	      <span>
+		[6] Can massive primordial black holes be produced 
+		in mild waterfall hybrid inflation?
+	      </span><br>
+	      M. Kawasaki and Y. Tada <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2016/08/041"
+		 target="_blank">
+		JCAP <b>1608</b>, no. 08, 041 (2016)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1512.03515"
+		 target="_blank">
+		1512.03515
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[5] Consistent generation of magnetic fields in axion
+		inflation models
+	      </span><br>
+	      T. Fujita, R. Namba, Y. Tada, N. Takeda and H. Tashiro <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2015/05/054"
+	       target="_blank">
+		JCAP <b>1505</b>, no. 05, 054 (2015)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1503.05802"
+		 target="_blank">
+		1503.05802
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[4] Primordial black holes as biased tracers
+	      </span><br>
+	      Y. Tada and S. Yokoyama <br>
+	      <a href="https://doi.org/10.1103/PhysRevD.91.123534"
+		 target="_blank">
+		Phys. Rev. D <b>91</b>, 123534 (2015)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1502.01124"
+		 target="_blank">
+		1502.01124
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2014</h3>
+	    
+	    <p>
+	      <span>
+		[3] Anisotropic CMB distortions from non-Gaussian 
+		isocurvature perturbations
+	      </span><br>
+	      A. Ota, T. Sekiguchi, Y. Tada and S. Yokoyama <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2015/03/013"
+		 target="_blank">
+		JCAP <b>1503</b>, no. 03, 013 (2015)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1412.4517"
+		 target="_blank">
+		1412.4517
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <p>
+	      <span>
+		[2] Non-perturbative approach for curvature perturbations 
+		in stochastic-$\delta N$ formalism
+	      </span><br>
+	      T. Fujita, M. Kawasaki and Y. Tada <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2014/10/030"
+		 target="_blank">
+		JCAP <b>1410</b>, no. 10, 030 (2014)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1405.2187"
+		 target="_blank">
+		1405.2187
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	    <h3>2013</h3>
+	    
+	    <p>
+	      <span>
+		[1] A new algorithm for calculating the curvature perturbations 
+		in stochastic inflation
+	      </span><br>
+	      T. Fujita, M. Kawasaki, Y. Tada and T. Takesako <br>
+	      <a href="https://doi.org/10.1088/1475-7516/2013/12/036"
+		 target="_blank">
+		JCAP <b>1312</b>, 036 (2013)
+	      </a>
+	      [arXiv:
+	      <a href="https://arxiv.org/abs/1308.4754"
+		 target="_blank">
+		1308.4754
+	      </a>
+	      [astro-ph.CO]].
+	    </p>
+	    
+	  </div>
+	</div><br>
+	
+	<div class="row">
+	  
+	  <div class="three columns header-col">
+	    <h1><span> Ph.D. thesis <span></h1>
+	    <p class="download">
+	      <a href="pdfs/35147029_多田祐一郎_本文.pdf"
+		 class="button" target="_blank">
+		<i class="fa fa-download"></i>Download Ph.D. thesis
+	    </a>
+	    </p>
+	  </div>
+	  
+	  <div class="nine columns main-col">
+	    <h3>Curvature Perturbations and 
+	      Primordial Black Hole Formation in 
+	      the Inflationary Universe</h3>
+	  </div>
+	  
+	</div>
+	
+      </div>
+      
+    </section> <!-- Works Secdion End-->
 
+    
+
+    <!-- Contact Section
+	 ================================================== -->
+    <section id="contact">
+      
+      <div class="row section-head">
+	
+        <div class="two columns header-col">
+	  
+          <h1><span>Get In Touch.</span></h1>
+	  
+        </div>
+	
+        <div class="ten columns">
+	  
+          <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+          </p>
+
+        </div>
+
+      </div>
+      
       <div class="row">
 
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
-            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
-
-         </div>
-
-         <div class="three columns action">
-
-            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
-
-         </div>
-
+        <div class="eight columns">
+	  
+          <!-- form -->
+          <form action="" method="post" id="contactForm" name="contactForm">
+	    <fieldset>
+	      
+              <div>
+		<label for="contactName">Name <span class="required">*</span></label>
+		<input type="text" value="" size="35" id="contactName" name="contactName">
+              </div>
+	      
+              <div>
+		<label for="contactEmail">Email <span class="required">*</span></label>
+		<input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+              </div>
+	      
+              <div>
+		<label for="contactSubject">Subject</label>
+		<input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+              </div>
+	      
+              <div>
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+              </div>
+	      
+              <div>
+                <button class="submit">Submit</button>
+                <span id="image-loader">
+                  <img alt="" src="images/loader.gif">
+                </span>
+              </div>
+	      
+	    </fieldset>
+	  </form> <!-- Form End -->
+	  
+          <!-- contact-warning -->
+          <div id="message-warning"> Error boy</div>
+          <!-- contact-success -->
+	  <div id="message-success">
+	    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+	  </div>
+	  
+        </div>
+	
+	
+        <aside class="four columns footer-widgets">
+	  
+          <div class="widget widget_contact">
+	    
+	    <h4>Address and Phone</h4>
+	    <p class="address">
+	      Jonathan Doe<br>
+	      1600 Amphitheatre Parkway <br>
+	      Mountain View, CA 94043 US<br>
+	      <span>(123) 456-7890</span>
+	    </p>
+	    
+	  </div>
+	  
+          <div class="widget widget_tweets">
+	    
+            <h4 class="widget-title">Latest Tweets</h4>
+	    
+            <ul id="twitter">
+              <li>
+                <span>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                  <a href="#">http://t.co/CGIrdxIlI3</a>
+                </span>
+                <b><a href="#">2 Days Ago</a></b>
+              </li>
+              <li>
+                <span>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore veritatis et quasi
+                  <a href="#">http://t.co/CGIrdxIlI3</a>
+                </span>
+                <b><a href="#">3 Days Ago</a></b>
+              </li>
+            </ul>
+	    
+	  </div>
+	  
+        </aside>
+	
       </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Jonathan Doe<br>
-						   1600 Amphitheatre Parkway <br>
-						   Mountain View, CA 94043 US<br>
-						   <span>(123) 456-7890</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
-
-            </aside>
-
+      
+    </section> <!-- Contact Section End-->
+    
+    
+    <!-- footer
+	 ================================================== -->
+    <footer>
+      
+      <div class="row">
+	
+	<div class="twelve columns">
+	  
+          <ul class="social-links">
+	    <li><a href="https://www.facebook.com/yuichiro.tada.90"
+		   target="_blank">
+		<i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/NekomammaT"
+		   target="_blank">
+		<i class="fab fa-twitter"></i></a></li>
+	    <li><a href="https://inspirehep.net/authors/1316436"
+		   target="_blank">
+		<i class="ai ai-inspire"></i></a></li>
+	    <li><a href="https://orcid.org/0000-0001-6199-7033"
+		   target="_blank">
+		<i class="ai ai-orcid"></i></a></li>
+	    <li><a href="https://publons.com/researcher/2666248/yuichiro-tada/"
+		   target="_blank">
+		<i class="ai ai-publons"></i></a></li>
+	    <li><a href="https://scholar.google.com/citations?user=APdAYAwAAAAJ&hl=ja"
+		   target="_blank">
+		<i class="ai ai-google-scholar"></i></a></li>
+	    <li><a href="https://github.com/NekomammaT"
+		   target="_blank">
+		<i class="fab fa-github"></i></a></li>
+          </ul>
+	  
+          <ul class="copyright">
+            <li>&copy; Copyright 2014 CeeVee</li>
+            <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+          </ul>
+	  
+	</div>
+	
+	<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+	
       </div>
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-	================================================== -->
-   <footer>
-     
-     <div class="row">
-       
-       <div class="twelve columns">
-	 
-         <ul class="social-links">
-	   <li><a href="https://www.facebook.com/yuichiro.tada.90"
-		  target="_blank">
-	       <i class="fab fa-facebook"></i></a></li>
-           <li><a href="https://twitter.com/NekomammaT"
-		  target="_blank">
-	       <i class="fab fa-twitter"></i></a></li>
-	   <li><a href="https://inspirehep.net/authors/1316436"
-		  target="_blank">
-	       <i class="ai ai-inspire"></i></a></li>
-	   <li><a href="https://orcid.org/0000-0001-6199-7033"
-		  target="_blank">
-	       <i class="ai ai-orcid"></i></a></li>
-	   <li><a href="https://publons.com/researcher/2666248/yuichiro-tada/"
-		  target="_blank">
-	       <i class="ai ai-publons"></i></a></li>
-	   <li><a href="https://scholar.google.com/citations?user=APdAYAwAAAAJ&hl=ja"
-		  target="_blank">
-	       <i class="ai ai-google-scholar"></i></a></li>
-	   <li><a href="https://github.com/NekomammaT"
-		  target="_blank">
-	       <i class="fab fa-github"></i></a></li>
-         </ul>
-	 
-         <ul class="copyright">
-           <li>&copy; Copyright 2014 CeeVee</li>
-           <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
-         </ul>
-	 
-       </div>
-       
-       <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-       
-     </div>
-     
-   </footer> <!-- Footer End-->
-   
-   <!-- Java Script
-	================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-											     <script type="text/javascript"
-												     src="js/jquery-migrate-1.2.1.min.js">
-											     </script>
-											     
-											     <script src="js/jquery.flexslider.js">
-											     </script>
-											     <script src="js/waypoints.js"></script>
-											     <script src="js/jquery.fittext.js"></script>
-											     <script src="js/magnific-popup.js"></script>
-											     <script src="js/init.js"></script>
-											     
+      
+    </footer> <!-- Footer End-->
+    
+    <!-- Java Script
+	 ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+											      <script type="text/javascript"
+												      src="js/jquery-migrate-1.2.1.min.js">
+											      </script>
+											      
+											      <script src="js/jquery.flexslider.js">
+											      </script>
+											      <script src="js/waypoints.js"></script>
+											      <script src="js/jquery.fittext.js"></script>
+											      <script src="js/magnific-popup.js"></script>
+											      <script src="js/init.js"></script>
+											      
   </body>
   
 </html>
