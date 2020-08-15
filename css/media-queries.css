@@ -201,6 +201,8 @@
       margin: 18px auto;
    }
 
+   header .content span { display: none; }
+   
    header p span { display: block; }
    header .news p:before { content: none;	}
 
