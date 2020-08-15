@@ -97,24 +97,13 @@ header .content {
 header .content a { color: #fff; }
 header .content a:hover { color: #11ABB0; }
 
-header .date {
-    font: 14px 'opensans-regular', sans-serif;
-    color: #fff;
-    margin: 0 auto 18px auto;
-    width: 70%;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    text-align: right;
-}
-
-header .news h1 span { display: none; }
-header .news h1:before {
+header .news p span { display: none; }
+header .news p:before {
     font-family: 'FontAwesome';
     content: "\f0e0";
     padding-right: 10px;
     font-size: 36px;
     line-height: 36px;
-    /*text-align: right;*/
-    float: none;
     color: #ebeeee;
 }
 
