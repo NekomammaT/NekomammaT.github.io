@@ -92,9 +92,8 @@ header .content {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
     text-align: left;
 }
-header .content a {
-    color: #fff;
-}
+header .content a { color: #fff; }
+header .content a:hover { color: #11ABB0; }
 
 header .date {
     font: 14px 'opensans-regular', sans-serif;
@@ -112,6 +111,13 @@ header .news {
     width: 70%;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
     text-align: right;
+}
+
+header .info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    /*color: #6E7881;*/
+    margin-bottom: 18px;
+    margin-top: 9px;
 }
 
 
@@ -623,8 +629,8 @@ ul#nav li.current a { color: #F06000; }
     overflow: hidden;
 }
 
-#works a, #works a:visited  { color: #11ABB0; }
-#works a:hover, #works a:focus { color: #fff; }
+#works a, #works a:visited  { color: #fff; }
+#works a:hover, #works a:focus { color: #11ABB0; }
 
 #works h1 {
     font: 18px/24px 'opensans-bold', sans-serif;
@@ -644,14 +650,29 @@ ul#nav li.current a { color: #F06000; }
 #works .header-col { padding-top: 9px; }
 #works .main-col { padding-right: 10%; }
 
-#works .papers {
+#works .papers, .conference, .activity, .award, .grant {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#works .papers span {
+
+#works .papers span, .conference span {
     color: #fff;
 }
+#works .papers hr, .conference hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+#works .papers table {width: 100%;}
+#works .papers table td {
+    width: 40%;
+}
+#works .papers table th {
+    text-align: left;
+}
+
 #works .download {
    width: 80%;
    padding-top: 6px;
@@ -659,7 +680,6 @@ ul#nav li.current a { color: #F06000; }
 #works .download .button {
     margin-top: 6px;
     background: #444;
-    color: #fff;
 }
 #works .download .button:hover {
    background: #fff;
@@ -670,20 +690,19 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
-
 #works .info {
     font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
+    /*color: #6E7881;*/
     margin-bottom: 18px;
     margin-top: 9px;
 }
 #works .info span {
-   margin-right: 5px;
-   margin-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 #works .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
+    font: 15px/24px 'opensans-regular', sans-serif;
+    margin-top: 6px;
 }
 
 
@@ -922,8 +941,10 @@ call-to-action .button {
 	padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
-   text-align: left;
-   float: left;
+   /*text-align: left;*/
+   text-align: right;
+   /*float: left;*/
+   float: right;
    color: #ebeeee;
 }
 
@@ -936,7 +957,9 @@ call-to-action .button {
    font: 18px/36px 'opensans-light', sans-serif;
    padding-right: 3%;
 }
-#contact .header-col { padding-top: 6px; }
+#contact .header-col {
+    padding-top: 6px;
+}
 
 
 /* contact form */
