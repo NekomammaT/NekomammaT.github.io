@@ -201,6 +201,9 @@
       margin: 18px auto;
    }
 
+   header p span { display: block; }
+   header .news p:before { content: none;	}
+
    /* header social links */
    header .social {
       margin: 18px 0 24px 0;
