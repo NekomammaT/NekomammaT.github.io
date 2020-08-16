@@ -203,8 +203,8 @@
 
    header .content span { display: none; }
    
-   header p span { display: block; }
-   header .news p:before { content: none;	}
+   header .news span emph { display: block; }
+   header .news span:before { content: none;	}
 
    /* header social links */
    header .social {
