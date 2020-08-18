@@ -84,6 +84,9 @@ header .banner-text hr {
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
 }
+header .banner-text p {
+    margin-bottom: 10px;
+}
 
 header .content {
     font: 14px 'opensans-regular', sans-serif;
