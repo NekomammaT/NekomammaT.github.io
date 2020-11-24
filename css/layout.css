@@ -98,7 +98,6 @@ header .content {
 }
 header .content a { color: #fff; }
 header .content a:hover { color: #11ABB0; }
-header .content span {display: true;}
 
 header .news {
     font: 14px 'opensans-regular', sans-serif;
