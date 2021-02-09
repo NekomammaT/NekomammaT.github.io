@@ -94,6 +94,9 @@ header .banner-text hr {
 header .banner-text p {
     margin-bottom: 10px;
 }
+@media only screen and (max-width: 767px) {
+    header .banner-text span{ display: none; }
+}
 
 header .content {
     font: 14px 'opensans-regular', sans-serif;
@@ -132,7 +135,7 @@ header .info {
 }
 
 header .phone { display: none; }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px) {
     header .phone { display: block; }
 }
 
