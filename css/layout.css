@@ -131,6 +131,10 @@ header .info {
     margin-top: 9px;
 }
 
+header .phone { display: none; }
+@media only screen and (max-width: 900px) {
+    header .phone { display: block; }
+}
 
 /* header social links */
 header .social {
