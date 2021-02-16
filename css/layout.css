@@ -100,6 +100,7 @@ header .banner-text p {
 @media only screen and (max-width: 767px) {
     header .banner-text span{ display: none; }
 }
+header .banner-text a:hover { color: #11ABB0; }
 
 header .content {
     font: 14px 'opensans-regular', sans-serif;
