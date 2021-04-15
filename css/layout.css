@@ -683,7 +683,7 @@ ul#nav li.current a { color: #F06000; }
     padding-bottom: 24px;
 }
 
-#works .papers span, .conference span, .seminar span {
+#works .paper span, .conference span, .seminar span {
     color: #fff;
 }
 #works hr {
