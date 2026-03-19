@@ -294,7 +294,9 @@ ul#nav li.current a { color: #F06000; }
     width: 45%; /*58.33333%;*/
     padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+#about .main-col { padding-right: 5%; 
+   text-align: justify;
+}
 #about .download .button {
    margin-top: 6px;
    background: #444;
@@ -339,10 +341,15 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .career {
+.education {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
+}
+.career {
+   margin-bottom: 0px;
+   padding-bottom: 0px;
+   /*border-bottom: 1px solid #E8E8E8;*/
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -689,10 +696,10 @@ ul#nav li.current a { color: #F06000; }
 #works .header-col { padding-top: 9px; }
 #works .main-col { padding-right: 10%; }
 
-#works .book, .seminar, .activity, .award, .grant {
+#works .book, .seminar, .activity, .award, .grant, .achievements {
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
+    /*border-bottom: 1px solid #E8E8E8;*/
 }
 #works .paper, .thesis, .conference {
     margin-bottom: 48px;
